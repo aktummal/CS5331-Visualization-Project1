@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+Select State: <select name ="state"></select>
+<script src="http://d3js.org/d3.v3.min.js"> </script>
+
+<script>
+var data = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
+
+var select = d3.select('body')
+  .append('select')
+      .attr('class','select')
+    .on('change',onchange)
+
+var options = select
+  .selectAll('option')
+    .data(data).enter()
+    .append('option')
+        .text(function (d) { return d; });
+
+function onchange() {
+    selectValue = d3.select('select').property('value')
+    d3.select('body')
+        .append('p')
+        /*.text(selectValue + ' is the last selected option.')*/
+};
+</script>
+</body>
+</html>
