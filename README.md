@@ -1,6 +1,5 @@
 # CS5331-Visualization-Project1
-[ScreenShot]((https://github.com/aktummal/CS5331-Visualization-Project1/blob/master/1.PNG)](http://www.cs.uic.edu/~tdang/TimeArcs/EuroVis2016/TimeArcs_Dang_EuroVis2016.mp4)
-(https://github.com/aktummal/CS5331-Visualization-Project1/blob/master/pro1.mp4)
+[![ScreenShot]((https://github.com/aktummal/CS5331-Visualization-Project1/blob/master/1.PNG)](https://aktummal.github.io/CS5331-Visualization-Project1/pro1.mp4)
 ## Visualizing Time Series Data
 Visualizing time series data, the unemployment rate of all the states of the US is represented in various ways as per the provided instructions. This project provides the analysis of the discrepancies between the unemployment rates in various states of the USA in the time scale of 1980-2016.The principle source of the data used in this project is http://www.bls.gov/data. The major applications used are JavaScript and d3.
 ### DESIGN AND PROCEDURE FOR PROJECT
